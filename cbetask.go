@@ -1,4 +1,4 @@
-package cbetask
+package cbetaskinterface
 
 import (
 	"os"
