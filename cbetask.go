@@ -23,8 +23,8 @@ type Sequence interface {
 	enterState(int, *Event) int
 	//	exitState()
 	exitSequence()
-	setDefine(*defineSequence)
-	getDefine() *defineSequence
+	setDefine(*DefineSequence)
+	getDefine() *DefineSequence
 	setSequenceTimeout(int) chan int
 	setIntervalTimeout(int) chan int
 	addBlackList()
