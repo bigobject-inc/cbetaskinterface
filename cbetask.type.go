@@ -34,7 +34,7 @@ type TaskStruct struct {
 	events  []*Event // input for Task Process()
 
 	// sequenceStartTable    map[string]func(*TaskStruct) []Sequence
-	defineSequenceTable   map[string]*defineSequence // static - one for a sequence type
+	defineSequenceTable   map[string]*DefineSequence // static - one for a sequence type
 	sequenceInstanceTable map[string][]Sequence
 	sequenceBlackList     map[string]map[string]bool // map[seqName]map[GlobalID]bool an object (GID) can't be used by multiple sequence instances
 
@@ -60,7 +60,7 @@ type SequenceStruct struct {
 
 	context   *TaskStruct
 	objectMap map[string]ObjectMapStruct // use it to remember the object this sequence need
-	define    *defineSequence
+	define    *DefineSequence
 	repeats   map[int]*Repeat // (stateID + 1) * repeatDivider + conditionIndex, so 0~repeatDivider is for Sequence, repeatDivider~max is for States, repeatDivider for each
 
 	//  states []State
@@ -81,17 +81,17 @@ type ObjectMapStruct struct {
 
 // defineSequence and defineState define constants and function pointers
 // static functions/variables are shared by sequence instances
-type defineSequence struct {
+type DefineSequence struct {
 	startFunc func(*TaskStruct, *Event) []Sequence
 
-	states                []*defineState
+	states                []*DefineState
 	timeoutSequence       int
 	timeoutSequenceAction func(*SequenceStruct)
 	interval              int
 	intervalAction        func(*SequenceStruct)
 }
 
-type defineState struct {
+type DefineState struct {
 	endState bool                               // 2020/10/26, since exitSequence() is not mandatory in endState, seems like endState has no use anymore
 	eventNum int                                // number of event cond functions
 	guard    func(*SequenceStruct) (bool, bool) // check if objects are the targets
