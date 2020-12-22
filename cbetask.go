@@ -14,11 +14,3 @@ type Task interface {
 	Process() error
 	GetName() string
 }
-
-type Event interface {
-	Scan()
-}
-
-type Set interface {
-	Add(cbe.CBEObjStruct)
-}
