@@ -22,12 +22,12 @@ type Event struct { // ??
 	targets        []ttType.Node // Sequence name pair with list of globalIDs. map[varName]global_id
 
 	location  string // the location where the event occurs, area/cctv name
-	timestamp int    // timestamp when the event occurs
+	Timestamp int    // timestamp when the event occurs
 }
 
 type TaskStruct struct {
-	taskName  string
-	timestamp int
+	TaskName  string
+	Timestamp int
 	frameID   string
 
 	objects *Set     // input for Task Process()

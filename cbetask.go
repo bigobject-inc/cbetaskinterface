@@ -11,7 +11,7 @@ type Task interface {
 	Init(*os.File, *cbeutility.CBEutility, func(string, ...ttType.Node) error) error
 	Prepare(string, int, *Set, []*Event) error
 	Process() error
-	getName() string
+	GetName() string
 }
 
 type Sequence interface {
