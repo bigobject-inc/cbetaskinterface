@@ -1,4 +1,4 @@
-package cbetaskinterface
+package cbetask
 
 import (
 	"os"
@@ -14,25 +14,8 @@ type Task interface {
 	GetName() string
 }
 
-type Sequence interface {
-	init(*TaskStruct)
-	getContext() *TaskStruct
-	process(*Set, *Event)
-	getName() string
-	getID() int
-	enterState(int, *Event) int
-	//	exitState()
-	exitSequence()
-	setDefine(*DefineSequence)
-	getDefine() *DefineSequence
-	setSequenceTimeout(int) chan int
-	setIntervalTimeout(int) chan int
-	addBlackList()
-	removeBlackList()
-	resetIntervalTimeout()
+type Event interface {
+}
 
-	getObjectMap() map[string]ObjectMapStruct
-
-	print(...interface{})
-	endStateAction()
+type Set interface {
 }
