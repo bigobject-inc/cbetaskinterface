@@ -1,9 +1,9 @@
 # Interface for cbetask
 
 
-# cbetask ver-1.0.7
+# cbetask ver-1.0.8
 
-使用CBE package 的 worker
+cbetask 和 worker 共用的 interface
 
 
 ## Changelog
