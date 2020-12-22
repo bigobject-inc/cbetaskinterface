@@ -1,7 +1,7 @@
 # Interface for cbetask
 
 
-# cbetask ver-1.0.1
+# cbetask ver-1.0.2
 
 使用CBE package 的 worker
 
