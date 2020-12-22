@@ -1,4 +1,4 @@
-module bitbucket.org/bigobject/cbetask
+module github.com/ptoyoohri/cbetaskinterface
 
 go 1.13
 
