@@ -13,4 +13,5 @@ type Task interface {
 	Prepare(cbe.CBE) error
 	Process() error
 	GetName() string
+	GetVersion() string
 }
