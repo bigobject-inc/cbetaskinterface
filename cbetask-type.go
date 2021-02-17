@@ -25,17 +25,17 @@ import (
 )
 
 type Event struct {
-	EventType    string
-	ToInstanceID int // instance that receive the event
+	EventType    string `json:"EventType"`
+	ToInstanceID int    `json:"ToInstanceID"` // instance that receive the event
 
-	ToSequenceName string // instance name that receive the event
+	ToSequenceName string `json:"ToSequenceName"` // instance name that receive the event
 
-	Subjects []ttType.Node //  instance name pair with list of globalIDs. map[varName]global_id
+	Subjects []ttType.Node `json:"Subjects"` //  instance name pair with list of globalIDs. map[varName]global_id
 
-	Location string // the location where the event occurs, area/cctv name
+	Location string `json:"Location"` // the location where the event occurs, area/cctv name
 
-	Timestamp   int   // timestamp when the event occurs
-	Microsecond int64 // timestamp in microsecond
+	Timestamp   int   `json:"Timestamp"`   // timestamp when the event occurs
+	Microsecond int64 `json:"Microsecond"` // timestamp in microsecond
 }
 
 /*
