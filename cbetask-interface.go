@@ -30,7 +30,7 @@ import (
 
 type Task interface {
 	Init(*os.File, *cbeutility.CBEutility, func(string, ...ttType.Node) error) error
-	Prepare(cbe.CBE) error
+	Prepare(cbe.CBE, Event) error
 	Process() error
 	GetName() string
 	GetVersion() string
