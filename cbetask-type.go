@@ -28,7 +28,7 @@ type Event struct {
 	EventType    string `json:"EventType"`
 	ToInstanceID int    `json:"ToInstanceID"` // instance that receive the event
 
-	ToSequenceName string `json:"ToSequenceName"` // instance name that receive the event
+	ToInstanceName string `json:"ToInstanceName"` // instance name that receive the event
 
 	Subjects []ttType.Node `json:"Subjects"` //  instance name pair with list of globalIDs. map[varName]global_id
 
