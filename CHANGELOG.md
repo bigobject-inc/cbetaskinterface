@@ -7,14 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-## [v1.3.0] - 2021-03-09
+## [v1.3.1] - 2021-03-09
 
 ### Changed
 
 - add type TaskSetting
 - add Defer()
 - change Init()
-
+- add LogLevel
 
 ## [v1.2.2] - 2021-02-18
 
