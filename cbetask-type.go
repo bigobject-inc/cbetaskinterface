@@ -24,6 +24,23 @@ import (
 	ttType "github.com/bigobject-inc/stailib/tt"
 )
 
+// TaskSetting : initialize and pass it into Task.Init()
+type TaskSetting struct {
+	Address  string `json:"address"`
+	Port     string `json:"port"`
+	User     string `json:"user"`
+	Password string `json:"password"`
+
+	LogPath string `json:"logPath"`
+
+	OpenPoseConfidence float64 `json:"openPoseConfidence"`
+
+	SimultaneousRange float64 `json:"simultaneousRange"`
+
+	RaiseExternalFunc func(string, ...ttType.Node) error
+}
+
+// Event is a structure sending between CBE
 type Event struct {
 	EventType    string `json:"EventType"`
 	ToInstanceID int    `json:"ToInstanceID"` // instance that receive the event
@@ -37,61 +54,3 @@ type Event struct {
 	Timestamp   int   `json:"Timestamp"`   // timestamp when the event occurs
 	Microsecond int64 `json:"Microsecond"` // timestamp in microsecond
 }
-
-/*
-func (e *Event) getEventType() string {
-	return e.eType
-}
-
-func (e *Event) setInstanceID(i string) {
-	e.eType = i
-}
-
-func (e *Event) getToInstanceID() int {
-	return e.toInstanceID
-}
-
-func (e *Event) setToInstanceID(i int) {
-	e.toInstanceID = i
-}
-
-func (e *Event) getToInstanceName() string {
-	return e.toSequenceName
-}
-
-func (e *Event) setToInstanceName(i string) {
-	e.toSequenceName = i
-}
-
-func (e *Event) getSubjects() []ttType.Node {
-	return e.subjects
-}
-
-func (e *Event) setSubjects(i []ttType.Node) {
-	e.subjects = i
-}
-
-func (e *Event) getLocation() string {
-	return e.location
-}
-
-func (e *Event) setLocation(i string) {
-	e.location = i
-}
-
-func (e *Event) getTimestamp() int {
-	return e.timestamp
-}
-
-func (e *Event) setTimestamp(i int) {
-	e.timestamp = i
-}
-
-func (e *Event) getMicrosecond() int64 {
-	return e.microsecond
-}
-
-func (e *Event) setMicrosecond(i int64) {
-	e.microsecond = i
-}
-*/
