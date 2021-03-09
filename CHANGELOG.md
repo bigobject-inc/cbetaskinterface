@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [v1.3.0] - 2021-03-09
+
+### Changed
+
+- add type TaskSetting
+- add Defer()
+- change Init()
+
 
 ## [v1.2.2] - 2021-02-18
 
@@ -65,6 +73,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add cbetaskinterface
 
 
+[v1.3.0]: github.com/bigobject-inc/cbetaskinterface/archive/v1.3.0
 [v1.2.2]: github.com/bigobject-inc/cbetaskinterface/archive/v1.2.2
 [v1.1.3]: github.com/bigobject-inc/cbetaskinterface/archive/v1.1.3
 [v1.0.10]: github.com/bigobject-inc/cbetaskinterface/archive/v1.0.10
