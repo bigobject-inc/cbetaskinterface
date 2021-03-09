@@ -31,8 +31,8 @@ type TaskSetting struct {
 	User     string `json:"user"`
 	Password string `json:"password"`
 
-	LogPath string `json:"logPath"`
-
+	LogPath            string  `json:"logPath"`
+	LogLevel           string  `json:"logLevel"`
 	OpenPoseConfidence float64 `json:"openPoseConfidence"`
 
 	SimultaneousRange float64 `json:"simultaneousRange"`
