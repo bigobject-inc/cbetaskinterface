@@ -21,17 +21,15 @@
 package cbetask
 
 import (
-	"os"
-
-	cbeutility "bitbucket.org/bigobject/cbe-utility/v3"
 	cbe "github.com/bigobject-inc/stailib/cbe"
-	ttType "github.com/bigobject-inc/stailib/tt"
 )
 
+// Task is the top level of CBE
 type Task interface {
-	Init(*os.File, *cbeutility.CBEutility, func(string, ...ttType.Node) error) error
+	Init(*TaskSetting) error
 	Prepare(cbe.CBE, []*Event) error
 	Process() ([]*Event, error)
+	Defer() error
 	GetExternalEvents() []*Event
 	GetName() string
 	GetVersion() string
