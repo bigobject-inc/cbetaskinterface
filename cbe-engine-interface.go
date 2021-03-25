@@ -18,19 +18,12 @@
 // 2021/02/05
 // ----------------------------------------------------------------------
 
-package cbetask
+package cbeengineinterface
 
-import (
-	cbe "github.com/bigobject-inc/stailib/cbe"
-)
-
-// Task is the top level of CBE
-type Task interface {
-	Init(*TaskSetting) error
-	Prepare(cbe.CBE, []*Event) error
+type CBEEngine interface {
+	Init(*CBEEngineSetting) error
 	Process() ([]*Event, error)
 	Defer() error
-	GetExternalEvents() []*Event
 	GetName() string
 	GetVersion() string
 }

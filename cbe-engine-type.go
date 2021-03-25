@@ -18,19 +18,19 @@
 // 2021/02/05
 // ----------------------------------------------------------------------
 
-package cbetask
+package cbeengineinterface
 
 import (
 	ttType "github.com/bigobject-inc/stailib/tt"
 )
 
-// TaskSetting : initialize and pass it into Task.Init()
-type TaskSetting struct {
+type CBEEngineSetting struct {
 	Address  string `json:"address"`
 	Port     string `json:"port"`
 	User     string `json:"user"`
 	Password string `json:"password"`
 
+	CBEPath            string  `json:"cbePath"`
 	LogPath            string  `json:"logPath"`
 	LogLevel           string  `json:"logLevel"`
 	OpenPoseConfidence float64 `json:"openPoseConfidence"`

@@ -1,7 +1,6 @@
-# Interface for cbetask: ver-1.3.1
+# Interface for cbe-engine and cbeWorker: ver-1.4.0
 
-cbetask 和 worker 共用的 interface
-
+cbe-engine 和 worker 共用的 interface
 
 ## Changelog
 
