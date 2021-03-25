@@ -20,9 +20,13 @@
 
 package cbeengineinterface
 
+import (
+	cbe "github.com/bigobject-inc/stailib/cbe"
+)
+
 type CBEEngine interface {
 	Init(*CBEEngineSetting) error
-	Process() ([]*Event, error)
+	Process(cbe.CBE, []*Event) ([]*Event, error)
 	Defer() error
 	GetName() string
 	GetVersion() string
