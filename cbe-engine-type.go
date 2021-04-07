@@ -30,13 +30,14 @@ type CBEEngineSetting struct {
 	User     string `json:"user"`
 	Password string `json:"password"`
 
-	CBEPath            string  `json:"cbePath"`
+	CBEPath            string  `json:"cbePath"` // path for cbe script
 	LogPath            string  `json:"logPath"`
 	LogLevel           string  `json:"logLevel"`
 	OpenPoseConfidence float64 `json:"openPoseConfidence"`
 
 	SimultaneousRange float64 `json:"simultaneousRange"`
 
+	Mode              string `json:"mode"` // "realtime" or "off-line"
 	RaiseExternalFunc func(string, ...ttType.Node) error
 }
 
