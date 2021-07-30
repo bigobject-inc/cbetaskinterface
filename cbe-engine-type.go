@@ -20,9 +20,7 @@
 
 package cbeengineinterface
 
-import (
-	ttType "github.com/bigobject-inc/stailib/tt"
-)
+//	ttType "github.com/bigobject-inc/stailib/tt"
 
 type CBEEngineSetting struct {
 	Address  string `json:"address"`
@@ -37,8 +35,8 @@ type CBEEngineSetting struct {
 
 	SimultaneousRange float64 `json:"simultaneousRange"`
 
-	Mode              string `json:"mode"` // "realtime" or "off-line"
-	RaiseExternalFunc func(string, ...ttType.Node) error
+	Mode string `json:"mode"` // "realtime" or "off-line"
+	//	RaiseExternalFunc func(string, ...ttType.Node) error
 }
 
 // Event is a structure sending between CBE
@@ -48,10 +46,12 @@ type Event struct {
 
 	ToInstanceName string `json:"ToInstanceName"` // instance name that receive the event
 
-	Subjects []ttType.Node `json:"Subjects"` //  instance name pair with list of globalIDs. map[varName]global_id
+	//	Subjects []ttType.Node `json:"Subjects"` //  instance name pair with list of globalIDs. map[varName]global_id
 
 	Location string `json:"Location"` // the location where the event occurs, area/cctv name
 
 	Timestamp   int   `json:"Timestamp"`   // timestamp when the event occurs
 	Microsecond int64 `json:"Microsecond"` // timestamp in microsecond
+
+	EventData interface{}
 }
