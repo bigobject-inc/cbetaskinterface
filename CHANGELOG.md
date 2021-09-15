@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.5.2] - 2021-09-15
+
+### Changed
+
+github.com/bigobject-inc/stailib v1.6.0
 
 ## [v1.5.1] - 2021-07-30
 
@@ -95,6 +100,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add cbetaskinterface
 
+[v1.5.2]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.2
 [v1.5.1]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.1
 [v1.4.2]: github.com/bigobject-inc/cbetaskinterface/archive/v1.4.2
 [v1.4.1]: github.com/bigobject-inc/cbetaskinterface/archive/v1.4.1
