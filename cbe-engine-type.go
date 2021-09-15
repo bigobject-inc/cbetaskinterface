@@ -21,13 +21,18 @@
 package cbeengineinterface
 
 //	ttType "github.com/bigobject-inc/stailib/tt"
+import (
+	cs "github.com/bigobject-inc/stailib/cs"
+)
 
 type CBEEngineSetting struct {
-	Address  string `json:"address"`
-	Port     string `json:"port"`
-	User     string `json:"user"`
-	Password string `json:"password"`
-
+	APISetting cs.APISetting
+	/*	Address  string `json:"address"`
+		Port     string `json:"port"`
+		User     string `json:"user"`
+		Password string `json:"password"`
+		CacheTimeout int    `json:"cacheTimeout"`
+	*/
 	CBEPath            string  `json:"cbePath"` // path for cbe script
 	LogPath            string  `json:"logPath"`
 	LogLevel           string  `json:"logLevel"`
