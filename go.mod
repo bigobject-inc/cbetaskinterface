@@ -2,4 +2,4 @@ module github.com/bigobject-inc/cbetaskinterface
 
 go 1.13
 
-require github.com/bigobject-inc/stailib v1.6.0
+require github.com/bigobject-inc/stailib v1.7.0
