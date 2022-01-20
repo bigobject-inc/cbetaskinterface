@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [v1.5.4] - 2022-01-20
+
+### Changed
+
+- use stailib@v1.5.4
+
+
 ## [v1.5.3] - 2021-09-15
 
 ### Changed
@@ -102,6 +110,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add cbetaskinterface
 
+
+[v1.5.4]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.4
 [v1.5.3]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.3
 [v1.5.1]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.1
 [v1.4.2]: github.com/bigobject-inc/cbetaskinterface/archive/v1.4.2
