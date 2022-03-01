@@ -6,11 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [v1.5.5] - 2022-03-01
+## [v1.5.6] - 2022-03-01
 
 ### Changed
 
-- use stailib@v1.8.0
+- use stailib@v1.8.1
 
 ## [v1.5.4] - 2022-01-20
 
@@ -117,7 +117,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add cbetaskinterface
 
 
-[v1.5.5]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.5
+[v1.5.6]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.6
 [v1.5.4]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.4
 [v1.5.3]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.3
 [v1.5.1]: github.com/bigobject-inc/cbetaskinterface/archive/v1.5.1
