@@ -40,7 +40,8 @@ type CBEEngineSetting struct {
 
 	SimultaneousRange float64 `json:"simultaneousRange"`
 
-	Mode string `json:"mode"` // "realtime" or "off-line"
+	Mode    string         `json:"mode"` // "realtime" or "off-line"
+	License LicenseSetting `json:"license"`
 	//	RaiseExternalFunc func(string, ...ttType.Node) error
 }
 
@@ -59,4 +60,10 @@ type Event struct {
 	Microsecond int64 `json:"Microsecond"` // timestamp in microsecond
 
 	EventData interface{}
+}
+
+type LicenseSetting struct {
+	SOPath      string `json:"soPath"`
+	LicensePath string `json:"licensePath"`
+	KeyPath     string `json:"keyPath"`
 }
