@@ -48,7 +48,7 @@ type CBEEngineSetting struct {
 // Event is a structure sending between CBE
 type Event struct {
 	EventType    string `json:"EventType"`
-	ToInstanceID int    `json:"ToInstanceID"` // instance that receive the event
+	ToInstanceID string `json:"ToInstanceID"` // instance that receive the event
 
 	ToInstanceName string `json:"ToInstanceName"` // instance name that receive the event
 
